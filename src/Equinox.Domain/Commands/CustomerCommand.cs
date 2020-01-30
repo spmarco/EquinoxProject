@@ -1,5 +1,5 @@
-﻿using System;
-using Equinox.Domain.Core.Commands;
+﻿using Equinox.Domain.Core.Commands;
+using System;
 
 namespace Equinox.Domain.Commands
 {

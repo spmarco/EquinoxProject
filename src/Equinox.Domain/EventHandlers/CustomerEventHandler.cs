@@ -1,7 +1,7 @@
-﻿using System.Threading;
-using System.Threading.Tasks;
-using Equinox.Domain.Events;
+﻿using Equinox.Domain.Events;
 using MediatR;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace Equinox.Domain.EventHandlers
 {

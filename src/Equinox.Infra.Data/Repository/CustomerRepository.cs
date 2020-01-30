@@ -1,8 +1,8 @@
-﻿using System.Linq;
-using Equinox.Domain.Interfaces;
+﻿using Equinox.Domain.Interfaces;
 using Equinox.Domain.Models;
 using Equinox.Infra.Data.Context;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace Equinox.Infra.Data.Repository
 {
@@ -11,7 +11,6 @@ namespace Equinox.Infra.Data.Repository
         public CustomerRepository(EquinoxContext context)
             : base(context)
         {
-
         }
 
         public Customer GetByEmail(string email)

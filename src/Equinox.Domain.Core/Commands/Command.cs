@@ -1,6 +1,6 @@
-﻿using System;
-using Equinox.Domain.Core.Events;
+﻿using Equinox.Domain.Core.Events;
 using FluentValidation.Results;
+using System;
 
 namespace Equinox.Domain.Core.Commands
 {

@@ -1,10 +1,10 @@
-using System;
 using Equinox.Application.Interfaces;
 using Equinox.Application.ViewModels;
 using Equinox.Domain.Core.Notifications;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System;
 
 namespace Equinox.UI.Web.Controllers
 {
@@ -13,7 +13,7 @@ namespace Equinox.UI.Web.Controllers
     {
         private readonly ICustomerAppService _customerAppService;
 
-        public CustomerController(ICustomerAppService customerAppService, 
+        public CustomerController(ICustomerAppService customerAppService,
                                   INotificationHandler<DomainNotification> notifications) : base(notifications)
         {
             _customerAppService = customerAppService;
@@ -69,7 +69,7 @@ namespace Equinox.UI.Web.Controllers
 
             return View(customerViewModel);
         }
-        
+
         [HttpGet]
         [Authorize(Policy = "CanWriteCustomerData")]
         [Route("customer-management/edit-customer/{id:guid}")]

@@ -1,8 +1,8 @@
-﻿using System;
-using System.Linq;
-using System.Collections.Generic;
-using Equinox.Domain.Core.Events;
+﻿using Equinox.Domain.Core.Events;
 using Equinox.Infra.Data.Context;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Equinox.Infra.Data.Repository.EventSourcing
 {

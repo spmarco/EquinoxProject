@@ -36,7 +36,8 @@ namespace Equinox.UI.Web
                 .AddDefaultTokenProviders();
 
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-                .AddCookie(o => {
+                .AddCookie(o =>
+                {
                     o.LoginPath = new PathString("/login");
                     o.AccessDeniedPath = new PathString("/home/access-denied");
                 })
@@ -80,7 +81,6 @@ namespace Equinox.UI.Web
             {
                 app.UseDeveloperExceptionPage();
                 app.UseDatabaseErrorPage();
-
             }
             else
             {

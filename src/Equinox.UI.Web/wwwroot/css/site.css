@@ -25,83 +25,84 @@ textarea {
 
 /* buttons and links extension to use brackets: [ click me ] */
 .btn-bracketed::before {
-    display:inline-block;
+    display: inline-block;
     content: "[";
     padding-right: 0.5em;
 }
+
 .btn-bracketed::after {
-    display:inline-block;
+    display: inline-block;
     content: "]";
     padding-left: 0.5em;
 }
 
 /* Make .svg files in the carousel display properly in older browsers */
-.carousel-inner .item img[src$=".svg"]
-{
+.carousel-inner .item img[src$=".svg"] {
     width: 100%;
 }
 
 /* Hide/rearrange for smaller screens */
 @media screen and (max-width: 767px) {
-  /* Hide captions */
-  .carousel-caption {
-    display: none
-  }
+    /* Hide captions */
+    .carousel-caption {
+        display: none
+    }
 }
 
 .navbar-brand {
-  padding: 5px;
+    padding: 5px;
 }
-.navbar-brand>img {
-  height: 100%;
-  padding: 0px;
-  width: auto;
-}
+
+    .navbar-brand > img {
+        height: 100%;
+        padding: 0px;
+        width: auto;
+    }
 
 /* New buttons */
 
-.btn-purple { 
-  color: #FFFFFF; 
-  background-color: #5C2A9C; 
-  border-color: #5C2A9C; 
-} 
- 
-.btn-purple:hover, 
-.btn-purple:focus, 
-.btn-purple:active, 
-.btn-purple.active, 
-.open .dropdown-toggle.btn-purple { 
-  color: #FFFFFF; 
-  background-color: #49247A; 
-  border-color: #49247A; 
-} 
- 
-.btn-purple:active, 
-.btn-purple.active, 
-.open .dropdown-toggle.btn-purple { 
-  background-image: none; 
-} 
- 
-.btn-purple.disabled, 
-.btn-purple[disabled], 
-fieldset[disabled] .btn-purple, 
-.btn-purple.disabled:hover, 
-.btn-purple[disabled]:hover, 
-fieldset[disabled] .btn-purple:hover, 
-.btn-purple.disabled:focus, 
-.btn-purple[disabled]:focus, 
-fieldset[disabled] .btn-purple:focus, 
-.btn-purple.disabled:active, 
-.btn-purple[disabled]:active, 
-fieldset[disabled] .btn-purple:active, 
-.btn-purple.disabled.active, 
-.btn-purple[disabled].active, 
-fieldset[disabled] .btn-purple.active { 
-  background-color: #5C2A9C; 
-  border-color: #5C2A9C; 
-} 
- 
-.btn-purple .badge { 
-  color: #5C2A9C; 
-  background-color: #FFFFFF; 
+.btn-purple {
+    color: #FFFFFF;
+    background-color: #5C2A9C;
+    border-color: #5C2A9C;
 }
+
+    .btn-purple:hover,
+    .btn-purple:focus,
+    .btn-purple:active,
+    .btn-purple.active,
+    .open .dropdown-toggle.btn-purple {
+        color: #FFFFFF;
+        background-color: #49247A;
+        border-color: #49247A;
+    }
+
+    .btn-purple:active,
+    .btn-purple.active,
+    .open .dropdown-toggle.btn-purple {
+        background-image: none;
+    }
+
+    .btn-purple.disabled,
+    .btn-purple[disabled],
+    fieldset[disabled] .btn-purple,
+    .btn-purple.disabled:hover,
+    .btn-purple[disabled]:hover,
+    fieldset[disabled] .btn-purple:hover,
+    .btn-purple.disabled:focus,
+    .btn-purple[disabled]:focus,
+    fieldset[disabled] .btn-purple:focus,
+    .btn-purple.disabled:active,
+    .btn-purple[disabled]:active,
+    fieldset[disabled] .btn-purple:active,
+    .btn-purple.disabled.active,
+    .btn-purple[disabled].active,
+    fieldset[disabled] .btn-purple.active {
+        background-color: #5C2A9C;
+        border-color: #5C2A9C;
+    }
+
+    .btn-purple .badge {
+        color: #5C2A9C;
+        background-color: #FFFFFF;
+    }

@@ -1,7 +1,7 @@
-﻿using System.Threading.Tasks;
-using Equinox.Domain.Core.Notifications;
+﻿using Equinox.Domain.Core.Notifications;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace Equinox.UI.Web.ViewComponents
 {

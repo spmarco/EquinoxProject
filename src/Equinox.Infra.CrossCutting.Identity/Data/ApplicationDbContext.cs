@@ -11,7 +11,7 @@ namespace Equinox.Infra.CrossCutting.Identity.Data
         private readonly IHostingEnvironment _env;
 
         public ApplicationDbContext(
-                    DbContextOptions<ApplicationDbContext> options, 
+                    DbContextOptions<ApplicationDbContext> options,
                     IHostingEnvironment env) : base(options)
         {
             _env = env;

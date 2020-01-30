@@ -1,8 +1,8 @@
-﻿using System;
+﻿using Equinox.Domain.Core.Events;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using Equinox.Domain.Core.Events;
-using Newtonsoft.Json;
 
 namespace Equinox.Application.EventSourcedNormalizers
 {
@@ -34,7 +34,7 @@ namespace Equinox.Application.EventSourcedNormalizers
                         : change.Email,
                     BirthDate = string.IsNullOrWhiteSpace(change.BirthDate) || change.BirthDate == last.BirthDate
                         ? ""
-                        : change.BirthDate.Substring(0,10),
+                        : change.BirthDate.Substring(0, 10),
                     Action = string.IsNullOrWhiteSpace(change.Action) ? "" : change.Action,
                     When = change.When,
                     Who = change.Who
@@ -65,6 +65,7 @@ namespace Equinox.Application.EventSourcedNormalizers
                         slot.Id = values["Id"];
                         slot.Who = e.User;
                         break;
+
                     case "CustomerUpdatedEvent":
                         values = JsonConvert.DeserializeObject<dynamic>(e.Data);
                         slot.BirthDate = values["BirthDate"];
@@ -75,6 +76,7 @@ namespace Equinox.Application.EventSourcedNormalizers
                         slot.Id = values["Id"];
                         slot.Who = e.User;
                         break;
+
                     case "CustomerRemovedEvent":
                         values = JsonConvert.DeserializeObject<dynamic>(e.Data);
                         slot.Action = "Removed";

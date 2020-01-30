@@ -1,5 +1,5 @@
-﻿using System;
-using Equinox.Domain.Validations;
+﻿using Equinox.Domain.Validations;
+using System;
 
 namespace Equinox.Domain.Commands
 {

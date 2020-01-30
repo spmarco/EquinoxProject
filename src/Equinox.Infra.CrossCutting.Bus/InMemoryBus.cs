@@ -1,8 +1,8 @@
-﻿using System.Threading.Tasks;
-using Equinox.Domain.Core.Bus;
+﻿using Equinox.Domain.Core.Bus;
 using Equinox.Domain.Core.Commands;
 using Equinox.Domain.Core.Events;
 using MediatR;
+using System.Threading.Tasks;
 
 namespace Equinox.Infra.CrossCutting.Bus
 {

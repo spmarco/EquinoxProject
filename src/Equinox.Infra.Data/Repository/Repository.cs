@@ -1,8 +1,8 @@
-﻿using System;
-using System.Linq;
-using Equinox.Domain.Interfaces;
+﻿using Equinox.Domain.Interfaces;
 using Equinox.Infra.Data.Context;
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Linq;
 
 namespace Equinox.Infra.Data.Repository
 {

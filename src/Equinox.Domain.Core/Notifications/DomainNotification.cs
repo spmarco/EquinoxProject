@@ -1,5 +1,5 @@
-﻿using System;
-using Equinox.Domain.Core.Events;
+﻿using Equinox.Domain.Core.Events;
+using System;
 
 namespace Equinox.Domain.Core.Notifications
 {

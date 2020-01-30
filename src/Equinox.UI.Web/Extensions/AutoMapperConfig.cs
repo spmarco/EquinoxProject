@@ -1,7 +1,7 @@
-﻿using System;
-using AutoMapper;
+﻿using AutoMapper;
 using Equinox.Application.AutoMapper;
 using Microsoft.Extensions.DependencyInjection;
+using System;
 
 namespace Equinox.UI.Web.Extensions
 {
@@ -13,7 +13,7 @@ namespace Equinox.UI.Web.Extensions
 
             services.AddAutoMapper();
 
-            // Registering Mappings automatically only works if the 
+            // Registering Mappings automatically only works if the
             // Automapper Profile classes are in ASP.NET project
             AutoMapperConfig.RegisterMappings();
         }

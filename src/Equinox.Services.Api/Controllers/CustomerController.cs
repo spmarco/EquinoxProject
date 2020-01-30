@@ -1,4 +1,3 @@
-using System;
 using Equinox.Application.Interfaces;
 using Equinox.Application.ViewModels;
 using Equinox.Domain.Core.Bus;
@@ -6,6 +5,7 @@ using Equinox.Domain.Core.Notifications;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System;
 
 namespace Equinox.Services.Api.Controllers
 {
@@ -38,7 +38,7 @@ namespace Equinox.Services.Api.Controllers
             var customerViewModel = _customerAppService.GetById(id);
 
             return Response(customerViewModel);
-        }     
+        }
 
         [HttpPost]
         [Authorize(Policy = "CanWriteCustomerData")]
@@ -55,7 +55,7 @@ namespace Equinox.Services.Api.Controllers
 
             return Response(customerViewModel);
         }
-        
+
         [HttpPut]
         [Authorize(Policy = "CanWriteCustomerData")]
         [Route("customer-management")]
@@ -78,7 +78,7 @@ namespace Equinox.Services.Api.Controllers
         public IActionResult Delete(Guid id)
         {
             _customerAppService.Remove(id);
-            
+
             return Response();
         }
 

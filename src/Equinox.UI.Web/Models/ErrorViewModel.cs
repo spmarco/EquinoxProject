@@ -1,5 +1,3 @@
-using System;
-
 namespace Equinox.UI.Web.Models
 {
     public class ErrorViewModel

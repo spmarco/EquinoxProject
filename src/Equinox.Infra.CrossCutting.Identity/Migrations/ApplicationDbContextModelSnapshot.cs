@@ -1,8 +1,8 @@
-﻿using System;
+﻿using Equinox.Infra.CrossCutting.Identity.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Equinox.Infra.CrossCutting.Identity.Data;
+using System;
 
 namespace Equinox.Infra.CrossCutting.Identity.Migrations
 {

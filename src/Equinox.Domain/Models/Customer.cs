@@ -1,5 +1,5 @@
-﻿using System;
-using Equinox.Domain.Core.Models;
+﻿using Equinox.Domain.Core.Models;
+using System;
 
 namespace Equinox.Domain.Models
 {

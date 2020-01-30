@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
-using System.Security.Claims;
-using Equinox.Domain.Interfaces;
+﻿using Equinox.Domain.Interfaces;
 using Microsoft.AspNetCore.Http;
+using System.Collections.Generic;
+using System.Security.Claims;
 
 namespace Equinox.Infra.CrossCutting.Identity.Models
 {
@@ -23,7 +23,7 @@ namespace Equinox.Infra.CrossCutting.Identity.Models
 
         public IEnumerable<Claim> GetClaimsIdentity()
         {
-            return  _accessor.HttpContext.User.Claims;
+            return _accessor.HttpContext.User.Claims;
         }
     }
 }

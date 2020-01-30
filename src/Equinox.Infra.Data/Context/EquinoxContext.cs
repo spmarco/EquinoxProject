@@ -20,7 +20,7 @@ namespace Equinox.Infra.Data.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new CustomerMap());
-                        
+
             base.OnModelCreating(modelBuilder);
         }
 
@@ -31,7 +31,7 @@ namespace Equinox.Infra.Data.Context
                 .SetBasePath(_env.ContentRootPath)
                 .AddJsonFile("appsettings.json")
                 .Build();
-            
+
             // define the database to use
             optionsBuilder.UseSqlServer(config.GetConnectionString("DefaultConnection"));
         }

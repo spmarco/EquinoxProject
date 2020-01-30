@@ -1,7 +1,4 @@
-﻿using System;
-using System.Security.Claims;
-using System.Threading.Tasks;
-using Equinox.Infra.CrossCutting.Identity.Extensions;
+﻿using Equinox.Infra.CrossCutting.Identity.Extensions;
 using Equinox.Infra.CrossCutting.Identity.Models;
 using Equinox.Infra.CrossCutting.Identity.Models.AccountViewModels;
 using Equinox.Infra.CrossCutting.Identity.Services;
@@ -11,6 +8,9 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using System;
+using System.Security.Claims;
+using System.Threading.Tasks;
 
 namespace Equinox.UI.Web.Controllers
 {
@@ -450,7 +450,6 @@ namespace Equinox.UI.Web.Controllers
             return View();
         }
 
-
         [HttpGet]
         //[Route("account/access-denied")]
         public IActionResult AccessDenied()
@@ -480,6 +479,6 @@ namespace Equinox.UI.Web.Controllers
             }
         }
 
-        #endregion
+        #endregion Helpers
     }
 }

@@ -1,6 +1,6 @@
-﻿using System;
-using Equinox.Domain.Commands;
+﻿using Equinox.Domain.Commands;
 using FluentValidation;
+using System;
 
 namespace Equinox.Domain.Validations
 {

@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using AutoMapper;
+﻿using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using Equinox.Application.EventSourcedNormalizers;
 using Equinox.Application.Interfaces;
@@ -9,6 +7,8 @@ using Equinox.Domain.Commands;
 using Equinox.Domain.Core.Bus;
 using Equinox.Domain.Interfaces;
 using Equinox.Infra.Data.Repository.EventSourcing;
+using System;
+using System.Collections.Generic;
 
 namespace Equinox.Application.Services
 {
